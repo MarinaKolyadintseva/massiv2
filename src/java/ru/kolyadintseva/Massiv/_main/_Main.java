@@ -1,9 +1,6 @@
 package ru.kolyadintseva.Massiv._main;
 
-<<<<<<< HEAD
-public class _Main {
 
-=======
 import ru.kolyadintseva.Massiv.service.ArrayService;
 
 public class _Main {
@@ -19,5 +16,4 @@ public class _Main {
         ArrayService arrayService4 = new ArrayService();
         arrayService4.start5();
     }
->>>>>>> 431678f (Initial commit)
 }
