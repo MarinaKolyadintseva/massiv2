@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class ArrayService {
 
-    public void start() {
+    public void evenNumbers() {
 
         int[] array_nums = {5, -3, 2, 1, 7, 11, 12, -4, 1, 10};
         System.out.println("Original Array: " + Arrays.toString(array_nums));
@@ -20,7 +20,7 @@ public class ArrayService {
         System.out.println("Четные числа : " + ctr);
     }
 
-    public void start2() {
+    public void oddNumbers() {
         int[] array_nums = {5, -3, 2, 1, 7, 11, 12, -4, 1, 10};
         System.out.println("Original Array: " + Arrays.toString(array_nums));
         int ctr = 0;
@@ -31,7 +31,7 @@ public class ArrayService {
         System.out.println("Нечетные числа  : " + (array_nums.length - ctr));
     }
 
-    public void start3() {
+    public void primeNumbers() {
         int count = -3;
         int n = 10;
         ArrayList<Integer> numbers = new ArrayList<>();
@@ -41,7 +41,7 @@ public class ArrayService {
         numbers.add(7);
         Date startTime = new Date();
         for (int i = 11; i <= n; i += 2) {
-            if (simple(i)) {
+            if (sumNumbers(i)) {
                 count++;
                 numbers.add(i);
             }
@@ -54,7 +54,7 @@ public class ArrayService {
 
     }
 
-    static boolean simple(int a) {
+    static boolean sumNumbers(int a) {
         int p = 0;
         if ((a % 2 == 0) || (a % 10 == 5)) {
             return false;
@@ -71,7 +71,7 @@ public class ArrayService {
         } else return true;
     }
 
-    public void start4() {
+    public void differenceOfNumbers() {
         int myArray[] = {5, -3, 2, 1, 7, 11, 12, -4, 1, 10};
         int sum = 0;
         for (int i = 0; i < myArray.length; i++) {
@@ -80,7 +80,7 @@ public class ArrayService {
         System.out.println(sum);
     }
 
-    public void start5() {
+    public void quantity0() {
         {
             int[] arr = new int[]{5, -3, 2, 1, 7, 11, 12, -4, 1, 10};
             int res = 0;
